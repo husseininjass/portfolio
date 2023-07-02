@@ -321,8 +321,42 @@
 #experiences div div{
     border: 1px solid #0C134F;
     border-radius: 5px;
-    margin-left: 30px;
+    margin-left: 100px;
     font-size: 40px;
     color: #0C134F;
     padding: 10px;
+}
+.objecte{
+    margin-top: 5%;
+    padding: 20px;
+    text-align: center;
+    color: #0C134F;
+}
+.objecte h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.objecte p{
+    font-size: 25px;
+}
+.footer{
+    background-color: #0C134F;
+    color: white;
+    text-align: center;
+    height: 40vh;
+}
+.footer div{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.footer div span{
+    font-size: 40px;
+    color: #3795BD;
+}
+.footer a{
+    text-decoration: none;
+    padding: 10px;
+}
+.footer i{
+    font-size: 40px;
 }
