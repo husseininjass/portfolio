@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+/* header and navbar  */
+.header{
+    background-color: #161f39;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d2d6fd;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    color: #1D267D;
+    font-size: 40px;
+    transition: 1s;
+}
+
+.logo::after{
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: #02062c #02062c #02062c transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+    transition-duration: 2s;
+
+}
+.logo:hover::after{
+    transform: rotate(1turn);
+    border-color: #3795BD #3795BD #3795BD transparent;
+}
+.logo:hover{
+    color: #3795BD;
+    background-color: #0C134F;
+}
+
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: #0ef;
+}
+/* home page */
+#home{
+    background-color: #161f39;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+   
+}
+#home .personal{
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 7%;
+}
+.personal h3{
+    text-transform: capitalize;
+}
+.personal h1{
+    text-transform: uppercase;
+}
+.personal a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.personal a:hover{
+    color: rgb(32, 89, 174);
+}
+#home .personal_img{
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
+/* education */
+#education{
+    text-align: center;
+    margin-top: 3%;
+}
+#education .university{
+    margin-top: 3%;
+}
+#education h2{
+    font-weight: bold;
+}
+.edu_line{
+    width: 50%;
+    margin: 0 auto;
+    border-top: 3px solid ;
+}
+#education .university{
+    display: flex;
+    justify-content: center;
+
+}
+.orange{
+    margin-right: 5%;
+}
+#education .university .orange_photo{
+    background-image: url("Coding-Academy-Logo.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#education .university .neu_photo{
+    background-image: url("International-Postgraduate-Scholarships-at-Near-East-University-in-Turkey-2020.png");
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+#education .university .student{
+    background-color: #0C134F;
+    color: white;
+    border: 1px solid #0C134F;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* skills */
+#skills{
+    margin-top: 5%;
+    background-color: #0C134F;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    height: 350px;
+}
+#skills h2{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+#skills .pro{
+    display: flex;
+    justify-content: center;
+}
+#skills div{
+    width: 100%;
+    height: 200px;
+}
+#skills .html{
+    background-image: url(html5-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+#skills .css{
+    background-image: url(css3-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#skills .js{
+    background-image: url(JavaScript-logo.png);
+    background-size: cover;
+    background-position: center;
+}
+#skills .cpp{
+    background-image: url(cpp-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#skills .csharp{
+    background-image: url(csharp-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#skills .py{
+    background-image: url(python-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#skills .gdscript{
+    background-image: url(godot-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
