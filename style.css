@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -68,21 +68,22 @@
 #home{
     background-color: #161f39;
     height: 100vh;
-    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
    
 }
 #home .personal{
     color: white;
-    position: absolute;
-    top: 42%;
-    left: 7%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 .personal h3{
     text-transform: capitalize;
 }
 .personal h1{
     text-transform: uppercase;
+    color: #0ef;
 }
 .personal a{
     text-decoration: none;
@@ -92,11 +93,7 @@
 .personal a:hover{
     color: rgb(32, 89, 174);
 }
-#home .personal_img{
-    position: absolute;
-    top: 12%;
-    left: 60%;
-}
+
 /* education */
 #education{
     text-align: center;
