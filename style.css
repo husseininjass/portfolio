@@ -53,17 +53,29 @@
     color: #3795BD;
     background-color: #0C134F;
 }
-
-.navbar a{
-    display: inline-block;
+.navbar ul{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+.navbar li{
     text-decoration: none;
     margin-left: 30px;
+}
+.navbar a{
+    text-decoration: none;
     color: #fff;
     transition: 0.5s;
 }
 .navbar a:hover{
     color: #0ef;
 }
+.navbar .btn{
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
 /* home page */
 #home{
     background-color: #161f39;
@@ -71,7 +83,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-   
 }
 #home .personal{
     color: white;
@@ -93,6 +104,7 @@
 .personal a:hover{
     color: rgb(32, 89, 174);
 }
+
 
 /* education */
 #education{
@@ -356,4 +368,12 @@
 }
 .footer i{
     font-size: 40px;
+}
+@media (min-width: 412px) and (max-width: 1000px){
+    .navbar li{
+        display: none;
+    }
+    .navbar .btn{
+        display: flex;
+    }
 }
