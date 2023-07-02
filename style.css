@@ -58,7 +58,7 @@
     display: flex;
     list-style: none;
 }
-.navbar li{
+.navbar ul li{
     text-decoration: none;
     margin-left: 30px;
 }
