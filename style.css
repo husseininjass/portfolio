@@ -297,13 +297,46 @@
     font-size: 40px;
 }
 @media (min-width: 280px) and (max-width: 1000px){
+    
     .navbar li{
         display: none;
     }
     .navbar .btn{
         display: flex;
     }
-    body{
-        overflow-x: none;
+    #projects .all_projects{
+        flex-wrap: wrap;
+    }
+    .pro{
+        width: 100%;
+    }
+    .pro i{
+        font-size: 300%;
+    }
+    header{
+        width: 100%;
+    }
+    .university{
+        flex-wrap: wrap;
+    }
+    .orange , .neu{
+        width: 100% !important;
+    }
+    .orange_photo , .neu_photo{
+        width: 99% !important;
+    }
+    .orange_photo {
+        background-size: auto;
+        height: 20vh;
+    }
+    .student{
+        width: 100%;
+    }
+    #experiences .career{
+        flex-wrap: wrap;
+    }
+    .neu_photo{
+        height: 20vh !important;
+        margin-top: 4% !important;
     }
 }
