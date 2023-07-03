@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 98.9vw;
     position: sticky;
     top: 0;
     left: 0;
@@ -19,12 +19,12 @@
 }
 .logo{
     margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
     background-color: #d2d6fd;
     text-align: center;
-    line-height: 100px;
+    line-height: 350%;
     position: relative;
     color: #1D267D;
     font-size: 40px;
@@ -33,8 +33,8 @@
 
 .logo::after{
     content: "";
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@
     background-color: #0C134F;
 }
 .navbar ul{
-    margin-top: 20px;
+    margin-top: 2%;
     display: flex;
     list-style: none;
 }
@@ -79,14 +79,14 @@
 /* home page */
 #home{
     background-color: #161f39;
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 #home .personal{
     color: white;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 10%;
 }
 .personal h3{
@@ -104,7 +104,15 @@
 .personal a:hover{
     color: rgb(32, 89, 174);
 }
-
+.personal_img{
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.personal_img img{
+    width: 80%;
+    height: 80%;
+    
+}
 
 /* education */
 #education{
@@ -133,16 +141,16 @@
 #education .university .orange_photo{
     background-image: url("Coding-Academy-Logo.jpg");
     background-size: cover;
-    width: 500px;
-    height: 250px;
+    width: 40vw;
+    height: 40vh;
     border: 1px solid black;
     border-radius: 5px;
 }
 #education .university .neu_photo{
     background-image: url("International-Postgraduate-Scholarships-at-Near-East-University-in-Turkey-2020.png");
     background-size: cover;
-    width: 500px;
-    height: 250px;
+    width: 40vw;
+    height: 40vh;
     border: 1px solid black;
     border-radius: 5px;
 
@@ -160,12 +168,12 @@
     background-color: #0C134F;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 98.9;
     /* height: 350px; */
 }
 #skills h2{
-    padding: 20px;
-    margin-bottom: 60px;
+    padding: 2%;
+    margin-bottom: 5%;
     font-size: 40px;
     font-weight: bold;
 }
@@ -174,152 +182,69 @@
     justify-content: center;
 }
 #skills div{
-    width: 100%;
-    height: 200px;
+    height: 20vh;
+    text-align: center;
 }
-#skills .html{
-    background-image: url(html5-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
+.pro i{
+    font-size: 500%;
+    padding-right: 5%;
+    padding-left: 3%;
+    color: #0ef;
     
 }
-#skills .css{
-    background-image: url(css3-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
-}
-#skills .js{
-    background-image: url(JavaScript-logo.png);
-    background-size: cover;
-    background-position: center;
-}
-#skills .cpp{
-    background-image: url(cpp-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
-}
-#skills .csharp{
-    background-image: url(csharp-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
-}
-#skills .py{
-    background-image: url(python-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
-}
-#skills .gdscript{
-    background-image: url(godot-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
-}
+
 /* projects */
-#projects{
-    margin-top: 5%;
-}
 #projects h2{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 5%;
+    margin-top: 2%;
     font-weight: bold;
-    font-size: 40px;
 }
-.ninja , .mini_1 , .mini_2{
-    margin-bottom: 40px;
+.all_projects{
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+}
+
+.image{
+    border: 1px solid #0C134F;
+    border-radius: 1%;
+    margin-bottom: 20%;
     position: relative;
 }
-.mini_1 , .mini_2{
-    margin-left: 20px;
-}
-.ninja{
-    display: flex;
-    align-items: center;
-}
-.ninja_intro{
-    width: 600px;
-    margin-left: 300px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #0C134F;
-}
-.ninja::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100px;
-    background-color: #0C134F;
-    left: 450px;
-}
-.ninja::before{
+.image::after{
     content: "";
     position: absolute;
     background-color: white;
     border-width: 25px;
     border-style: solid;
-    border-color: transparent  transparent transparent #0C134F;
-    left: 470px;;
+    border-color: #0C134F  transparent transparent transparent;
+    left: 40%;
+    top: 105%;
 }
-.mini_1{
-    display: flex;
-    align-items: center;
+.image:hover::after{
+    border-color: #0ef  transparent transparent transparent;
 }
-.mini1_intro{
-    width: 600px;
-    margin-left: 320px;
-    font-size: 30px;
-    font-weight: bold;
+.ninja_intro , .mini1_intro , .mini2_intro{
+    width: 15rem;
     color: #0C134F;
+    font-size: 100%;
 }
-.mini_1::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100px;
-    background-color: #0C134F;
-    left: 450px;
+.par{
+    text-align: center;
+    margin-left: 10%;
 }
-.mini_1::before{
-    content: "";
-    position: absolute;
-    background-color: white;
-    border-width: 25px;
-    border-style: solid;
-    border-color: transparent  transparent transparent #0C134F;
-    left: 470px;;
+.ninja_par{
+    padding-left: 7%;
 }
-.mini_2{
-    display: flex;
-    align-items: center;
-}
-.mini2_intro{
-    width: 600px;
-    margin-left: 320px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #0C134F;
-}
-.mini_2::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100px;
-    background-color: #0C134F;
-    left: 450px;
-}
-.mini_2::before{
-    content: "";
-    position: absolute;
-    background-color: white;
-    border-width: 25px;
-    border-style: solid;
-    border-color: transparent  transparent transparent #0C134F;
-    left: 470px;;
-}
+
+/* experiences */
 #experiences {
     margin-top: 5%;
     text-align: center;
 }
 #experiences h2{
-    margin-bottom: 40px;
+    margin-bottom: 5%;
     font-size: 40px;
     font-weight: bold;
 }
@@ -330,14 +255,14 @@
 #experiences div div{
     border: 1px solid #0C134F;
     border-radius: 5px;
-    margin-left: 100px;
+    margin-left: 5%;
     font-size: 40px;
     color: #0C134F;
-    padding: 10px;
+    padding: 3%;
 }
 .objecte{
     margin-top: 5%;
-    padding: 20px;
+    padding: 5%;
     text-align: center;
     color: #0C134F;
 }
@@ -348,32 +273,37 @@
 .objecte p{
     font-size: 25px;
 }
+/* footer  */
 .footer{
     background-color: #0C134F;
     color: white;
     text-align: center;
-    height: 40vh;
+    height: 51vh;
 }
 .footer div{
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 1%;
+    padding: 2%;
 }
 .footer div span{
-    font-size: 40px;
+    font-size: 25px;
     color: #3795BD;
+    text-transform: uppercase;
 }
 .footer a{
     text-decoration: none;
-    padding: 10px;
+    padding: 2%;
 }
 .footer i{
     font-size: 40px;
 }
-@media (min-width: 412px) and (max-width: 1000px){
+@media (min-width: 280px) and (max-width: 1000px){
     .navbar li{
         display: none;
     }
     .navbar .btn{
         display: flex;
+    }
+    body{
+        overflow-x: none;
     }
 }
