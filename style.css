@@ -302,6 +302,7 @@
 .footer i{
     font-size: 40px;
 }
+/* responsive */
 @media (min-width: 280px) and (max-width: 1000px){
     
     .navbar li{
