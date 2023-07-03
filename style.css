@@ -75,6 +75,10 @@
     font-size: 40px;
     display: none;
 }
+.nav i select{
+    width: 50%;
+    height: 50%;
+}
 
 /* home page */
 #home{
@@ -255,10 +259,12 @@
 #experiences div div{
     border: 1px solid #0C134F;
     border-radius: 5px;
-    margin-left: 5%;
-    font-size: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 150%;
     color: #0C134F;
     padding: 3%;
+    width: 50%;
 }
 .objecte{
     margin-top: 5%;
@@ -320,23 +326,24 @@
         flex-wrap: wrap;
     }
     .orange , .neu{
-        width: 100% !important;
+        width: 100% ;
     }
-    .orange_photo , .neu_photo{
-        width: 99% !important;
+    .neu_photo{
+        width: 96% !important;
     }
     .orange_photo {
-        background-size: auto;
-        height: 20vh;
+        background-size: 100%;
+        padding: 10%;
+        width: 99% !important
     }
     .student{
         width: 100%;
     }
+    .neu_student{
+        width: 97%;
+    }
     #experiences .career{
         flex-wrap: wrap;
     }
-    .neu_photo{
-        height: 20vh !important;
-        margin-top: 4% !important;
-    }
+    
 }
