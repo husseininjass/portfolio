@@ -373,7 +373,8 @@ section ,footer{
         width: 96% !important;
     }
     .orange_photo {
-        background-size: 100%;
+        background-size: contain !important;
+        background-repeat: no-repeat;
         padding: 10%;
         width: 99% !important
     }
@@ -386,5 +387,20 @@ section ,footer{
     #experiences .career{
         flex-wrap: wrap;
     }
-    
+    #home{
+        flex-wrap: wrap;
+    }
+    .personal_img{
+        width: 60vw;
+        height: 44vh;
+        background-size: cover;
+        margin-left: 20%;
+    }
+    .orange , .neu{
+        margin-left: 4.5%;
+    }
+    .career div{
+        width: 100% !important;
+       
+    }
 }
