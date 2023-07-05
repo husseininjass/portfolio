@@ -4,6 +4,10 @@
     margin: 0;
     font-family: 'Merriweather', serif;
 }
+section ,footer{
+    
+    overflow-x: hidden;
+}
 /* header and navbar  */
 .header{
     background-color: #161f39;
@@ -11,23 +15,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98.9vw;
+    height: 12vh;
+    width: 100%;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 .logo{
-    margin-top: 20px;
-    width: 20vh;
-    height: 20vh;
+    margin: auto 0;
+    
+    width: 10vh;
+    height: 10vh;
     border-radius: 50%;
     background-color: #d2d6fd;
     text-align: center;
-    line-height: 350%;
+    line-height: 300%;
     position: relative;
     color: #1D267D;
-    font-size: 40px;
+    font-size: 3.5vh;
     transition: 1s;
 }
 
@@ -61,6 +67,7 @@
 .navbar ul li{
     text-decoration: none;
     margin-left: 30px;
+    font-size: 130%;
 }
 .navbar a{
     text-decoration: none;
@@ -88,7 +95,7 @@
 /* home page */
 #home{
     background-color: #161f39;
-    height: 85vh;
+    height: 88vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -105,9 +112,13 @@
     text-transform: uppercase;
     color: #0ef;
 }
+#home .personal p{
+    font-size: 140%;
+}
 .personal a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 130%;
+    color: #0ef;
 }
 
 .personal a:hover{
@@ -121,6 +132,11 @@
     width: 80%;
     height: 80%;
     
+}
+.butn{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2%;
 }
 
 /* education */
@@ -179,11 +195,12 @@
     color: white;
     width: 98.9;
     /* height: 350px; */
+    overflow: hidden;
 }
 #skills h2{
     padding: 2%;
     margin-bottom: 5%;
-    font-size: 40px;
+    font-size: 200%;
     font-weight: bold;
 }
 #skills .pro{
@@ -204,6 +221,7 @@
 
 /* projects */
 #projects h2{
+    font-size: 200%;
     text-align: center;
     margin-bottom: 5%;
     margin-top: 2%;
@@ -214,7 +232,10 @@
     justify-content: space-around;
     width: 98vw;
 }
-
+.all_projects span{
+    color: #3795BD;
+    font-size: 120%;
+}
 .image{
     border: 1px solid #0C134F;
     border-radius: 1%;
@@ -254,12 +275,13 @@
 }
 #experiences h2{
     margin-bottom: 5%;
-    font-size: 40px;
+    font-size: 200%;
     font-weight: bold;
 }
 #experiences > div{
     display: flex;
     justify-content: center;
+    margin-bottom: 2%;
 }
 #experiences div div{
     border: 1px solid #0C134F;
@@ -271,7 +293,7 @@
     padding: 3%;
     width: 50%;
 }
-.objecte{
+/* .objecte{
     margin-top: 5%;
     padding: 5%;
     text-align: center;
@@ -283,20 +305,20 @@
 }
 .objecte p{
     font-size: 25px;
-}
+} */
 /* footer  */
 .footer{
     background-color: #0C134F;
     color: white;
     text-align: center;
-    height: 51vh;
+    /* height: 40vh; */
 }
 .footer div{
-    margin-bottom: 1%;
-    padding: 2%;
+    /* margin-bottom: 1%; */
+    padding: 1%;
 }
 .footer div span{
-    font-size: 25px;
+    font-size: 170%;
     color: #3795BD;
     text-transform: uppercase;
 }
@@ -305,7 +327,7 @@
     padding: 2%;
 }
 .footer i{
-    font-size: 40px;
+    font-size: 200%;
 }
 /* responsive */
 @media (min-width: 280px) and (max-width: 1000px){
