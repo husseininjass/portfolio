@@ -125,8 +125,18 @@ section ,footer{
     color: rgb(32, 89, 174);
 }
 .personal_img{
+    background-image: url(new.jpg);
+    width: 30vw;
+    height: 70vh;
     margin-right: 10%;
     margin-top: 5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+.personal_img:hover{
+    box-shadow: 1px 2px #0ef , -1px -2px #3795BD;
 }
 .personal_img img{
     width: 80%;
@@ -292,6 +302,9 @@ section ,footer{
     color: #0C134F;
     padding: 3%;
     width: 50%;
+}
+.career span{
+    color: #3795BD;
 }
 /* .objecte{
     margin-top: 5%;
